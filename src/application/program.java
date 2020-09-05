@@ -19,7 +19,7 @@ public class program {
 		List<ChessPiece> captured = new ArrayList<>();
 		
 		while(true) {
-			try {
+			 try {
 				UI.clearScreen();
 				UI.printMatch(chessMatch, captured);
 				System.out.println();
@@ -35,7 +35,7 @@ public class program {
 				
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 				
-				if(captured != null) {
+				if(capturedPiece != null) {
 					captured.add(capturedPiece);
 				}
 			}
